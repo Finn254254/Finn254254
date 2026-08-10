@@ -4,9 +4,6 @@
 
 ### Hardware designer and builder behind ORCA Servers
 
-[![KiCad](https://img.shields.io/badge/KiCad-314CB0?style=for-the-badge&logo=kicad&logoColor=white)](https://www.kicad.org/)
-![PCB Design](https://img.shields.io/badge/PCB_Design-111111?style=for-the-badge)
-![Hardware](https://img.shields.io/badge/Hardware-Prototyping-0A66C2?style=for-the-badge)
 [![Support](https://img.shields.io/badge/Support_my_projects-FFDD00?style=for-the-badge&logo=buy-me-a-coffee&logoColor=black)](https://buymeacoffee.com/finnmather)
 
 </div>
