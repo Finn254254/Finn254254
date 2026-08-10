@@ -30,14 +30,6 @@ A custom PCIe x4 expansion board designed to connect an M.2 NVMe SSD to a mother
 
 </div>
 
-## Other public projects
-
-| Project | Focus |
-| --- | --- |
-| [BASE CTRL](https://github.com/Finn254254/BASE-CTRL-project) | Hardware project development |
-| [ZMK config](https://github.com/Finn254254/zmk-config) | ZMK keyboard configuration |
-| [ZMK config base](https://github.com/Finn254254/zmk-config-base) | Base configuration work for ZMK |
-
 ## Current focus
 
 ```text
