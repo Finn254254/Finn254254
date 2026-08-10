@@ -1,33 +1,32 @@
-<div align="center">
-
 # Hi, I'm Finn
 
-### Hardware designer and builder behind ORCA Servers
+I am a hardware designer building **ORCA Servers**: custom PCBs, server hardware and practical electronics projects for storage and homelab systems.
 
-[![Support](https://img.shields.io/badge/Support_my_projects-FFDD00?style=for-the-badge&logo=buy-me-a-coffee&logoColor=black)](https://buymeacoffee.com/finnmather)
-
-</div>
-
-## About me
-
-- Building custom PCBs, server hardware and practical electronics projects
-- Developing hardware under the **ORCA Servers** name
-- Interested in high-speed interfaces, storage, homelabs and embedded systems
-- Currently taking the ORCA PCIe NVMe Link from schematic to physical prototype
-
-## Featured project
-
-<div align="center">
-
-[![ORCA PCIe NVMe Link V3.0](https://raw.githubusercontent.com/Finn254254/ORCA-PCIe-NVMe-Link-/main/images/pcb-render-front.png)](https://github.com/Finn254254/ORCA-PCIe-NVMe-Link-)
+## Current project
 
 ### [ORCA PCIe NVMe Link V3.0](https://github.com/Finn254254/ORCA-PCIe-NVMe-Link-)
 
-A custom PCIe x4 expansion board designed to connect an M.2 NVMe SSD to a motherboard.
+A custom PCIe x4 expansion board designed to connect an M.2 NVMe SSD to a motherboard as part of the modular ORCA hardware platform.
 
-</div>
+## Support ORCA development
 
-## Current focus
+ORCA is currently self-funded and the PCIe NVMe Link is moving from completed design work toward a physical prototype and testing.
+
+If you want to help move the project forward, you can support it here:
+
+**[Support ORCA on Buy Me a Coffee](https://buymeacoffee.com/finnmather)**
+
+Support will be put toward:
+
+- Prototype PCB fabrication
+- Connectors, components and assembly costs
+- Independent engineering review
+- Electrical, signal-integrity, thermal and compatibility testing
+- Clear build and test documentation
+
+Contributions are voluntary support for development. They are not pre-orders, investments or promises of finished hardware.
+
+## Current milestone
 
 ```text
 ORCA PCIe NVMe Link
@@ -38,8 +37,9 @@ ORCA PCIe NVMe Link
 └── Physical testing pending
 ```
 
-<div align="center">
+## Follow the work
 
-**Designing hardware, learning through prototypes, and documenting the process.**
+- [Explore the ORCA PCIe NVMe Link](https://github.com/Finn254254/ORCA-PCIe-NVMe-Link-)
+- [Support prototype development](https://buymeacoffee.com/finnmather)
 
-</div>
+I am documenting the process as ORCA develops, including design decisions, prototype progress and testing results.
