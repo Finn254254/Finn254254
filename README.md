@@ -1,106 +1,93 @@
-# Hi, I'm Finn
+<div align="center">
 
-I am a hardware designer building **ORCA Servers**: a modular local-compute and server hardware platform built around custom PCBs.
+# Finn Mather
 
-## ORCA Hardware Platform
+### Building ORCA — custom computers from schematic to Linux
 
-**[Explore the ORCA Hardware Platform →](https://github.com/Finn254254/ORCA-PCIe-NVMe-Link-/blob/main/docs/hardware-platform.md)**
+I design PCBs, embedded systems, and modular server hardware in Norfolk, UK.
 
-The platform is being developed as separate, reusable hardware modules rather than one large motherboard:
+[![Orca One](https://img.shields.io/badge/FLAGSHIP-Orca_One_V1.0-111111?style=for-the-badge)](https://github.com/Finn254254/orca-one)
+[![ORCA OS](https://img.shields.io/badge/SOFTWARE-ORCA_OS-1f6feb?style=for-the-badge)](https://github.com/Finn254254/orca-os)
+[![Portfolio](https://img.shields.io/badge/PORTFOLIO-finn254254.github.io-6e40c9?style=for-the-badge)](https://finn254254.github.io)
+
+</div>
+
+## Orca One V1.0
+
+Orca One is my custom Linux single-board computer built around the **Allwinner V3s**. I designed the schematic, four-layer PCB, power system, external interfaces, and manufacturing package from scratch as the first complete board in the ORCA hardware platform.
+
+<table>
+  <tr>
+    <td width="50%" align="center"><img src="https://raw.githubusercontent.com/Finn254254/orca-one/main/images/orca-one-front.png" alt="Orca One front render"></td>
+    <td width="50%" align="center"><img src="https://raw.githubusercontent.com/Finn254254/orca-one/main/images/orca-one-back.png" alt="Orca One back render"></td>
+  </tr>
+  <tr>
+    <td align="center"><strong>Front</strong></td>
+    <td align="center"><strong>Back</strong></td>
+  </tr>
+</table>
+
+| | |
+| --- | --- |
+| **Processor** | Allwinner V3s ARM SoC |
+| **Board** | Custom four-layer PCB designed in KiCad 9 |
+| **Connectivity** | Ethernet, USB-A 2.0, MicroSD, UART, GPIO, and fan control |
+| **Power** | USB-C input with onboard 3.3 V, 3.0 V, 1.8 V, 1.2 V, and 1.1 V rails |
+| **Current stage** | Design complete; preparing for fabrication and bring-up |
+
+**[Explore the complete Orca One project →](https://github.com/Finn254254/orca-one)**
+
+## The ORCA platform
+
+ORCA is a growing family of custom computing hardware designed as interoperable modules rather than one fixed motherboard.
 
 ```text
 Compute ─┐
-Compute ─┼─ Backplane ─ I/O
-Storage ─┤      │
-Fabric  ─┘   Control
-              │
-            Power
+Compute ─┼── Backplane ─── I/O
+Storage ─┤       │
+Fabric  ─┘    Control
+                │
+              Power
 ```
 
-The roadmap currently includes Compute Modules, I/O, Power, Control, Backplane, Network/Fabric, Storage and future accelerator hardware.
+| Project | Purpose | Stage |
+| --- | --- | --- |
+| **[Orca One](https://github.com/Finn254254/orca-one)** | Complete V3s Linux SBC and hardware bring-up platform | Preparing for fabrication |
+| **[ORCA PCIe NVMe Link](https://github.com/Finn254254/ORCA-PCIe-NVMe-Link-)** | PCIe x4 to M.2 NVMe storage expansion board | Design and 3D review complete |
+| **[ORCA OS](https://github.com/Finn254254/orca-os)** | Linux software and board-support work for ORCA hardware | Early development |
+| **ORCA modular server** | Compute, control, power, I/O, backplane, fabric, and storage architecture | Architecture and prototyping |
 
-## Ongoing ORCA projects
+## What I work on
 
-### [ORCA PCIe NVMe Link V3.0](https://github.com/Finn254254/ORCA-PCIe-NVMe-Link-)
+- Schematic capture and PCB layout
+- Power distribution and multi-rail board design
+- High-speed storage and interconnect hardware
+- Embedded Linux board support and bring-up
+- Modular compute and server architecture
+- Manufacturing outputs, BOM preparation, and prototype testing
 
-Custom PCIe x4 to M.2 NVMe expansion board. This is an early ORCA storage-development project and practical test of PCIe routing, M.2 and PCB edge connections.
-
-Status: design complete enough to prepare for prototyping and physical testing.
-
-### [ORCA Compute Module](https://github.com/Finn254254/ORCA-PCIe-NVMe-Link-/blob/main/docs/boards/compute.md)
-
-Replaceable processing module concept containing the SoC, RAM, PMIC, boot storage and processor-specific power hardware.
-
-Status: architecture / concept.
-
-### [ORCA Control](https://github.com/Finn254254/ORCA-PCIe-NVMe-Link-/blob/main/docs/boards/control.md)
-
-Dedicated management board for power control, reset, fan management, temperatures, watchdogs and communication with compute nodes.
-
-Status: V3s-based design direction under development.
-
-### [ORCA Power](https://github.com/Finn254254/ORCA-PCIe-NVMe-Link-/blob/main/docs/boards/power.md)
-
-Server-level power input, protection, distribution, switching and monitoring while processor-specific rails remain local to Compute Modules.
-
-Status: concept / planned.
-
-### [ORCA I/O](https://github.com/Finn254254/ORCA-PCIe-NVMe-Link-/blob/main/docs/boards/io.md)
-
-Carrier-style connectivity board for USB, Ethernet, GPIO, debug and expansion interfaces.
-
-Status: concept / planned.
-
-### [ORCA Backplane](https://github.com/Finn254254/ORCA-PCIe-NVMe-Link-/blob/main/docs/boards/backplane.md)
-
-Common physical backbone intended to connect Compute, Power, Control, Storage and networking modules.
-
-Status: concept / interface planning.
-
-### [ORCA Network / Fabric](https://github.com/Finn254254/ORCA-PCIe-NVMe-Link-/blob/main/docs/boards/network-fabric.md)
-
-Internal node networking with a progression from conventional Ethernet toward higher-bandwidth links for distributed compute.
-
-Status: concept / planned.
-
-### [ORCA Storage](https://github.com/Finn254254/ORCA-PCIe-NVMe-Link-/blob/main/docs/boards/storage.md)
-
-Future modular NVMe and bulk-storage hardware building on the PCIe NVMe Link work.
-
-Status: early development / concept.
-
-## Current milestone
+## Current roadmap
 
 ```text
-ORCA PCIe NVMe Link
-├── Schematic        complete
-├── PCB layout       complete
-├── 3D review        complete
-├── Manufacturing    preparing
-└── Physical testing pending
-
-ORCA Platform
-├── Architecture     documenting
-├── Control          developing
-├── Compute          planning
-├── Power            planning
-├── I/O              planning
-├── Backplane        planning
-├── Fabric           planning
-└── Storage          developing
+Orca One
+├── Schematic and PCB       complete
+├── Manufacturing package  complete
+├── Prototype fabrication  next
+├── Assembly and power-up   pending
+├── Linux boot              pending
+└── Interface validation    pending
 ```
 
-## Support ORCA development
+## Follow and support the build
 
-ORCA is currently self-funded. Support goes toward prototype PCB fabrication, components, assembly, engineering review and hardware testing.
+I document ORCA as it develops—from design decisions and PCB revisions to fabrication, assembly, and Linux bring-up.
 
-**[Support ORCA on Buy Me a Coffee](https://buymeacoffee.com/finnmather)**
+- **[Browse the ORCA repositories](https://github.com/Finn254254?tab=repositories&q=orca)**
+- **[Visit my project portfolio](https://finn254254.github.io)**
+- **[Support prototype development](https://buymeacoffee.com/finnmather)**
 
-Contributions are voluntary support for development. They are not pre-orders, investments or promises of finished hardware.
+Support is voluntary and goes toward PCB fabrication, components, assembly, engineering review, and hardware testing. It is not a pre-order or investment.
 
-## Follow the work
+---
 
-- [ORCA Hardware Platform](https://github.com/Finn254254/ORCA-PCIe-NVMe-Link-/blob/main/docs/hardware-platform.md)
-- [ORCA PCIe NVMe Link](https://github.com/Finn254254/ORCA-PCIe-NVMe-Link-)
-
-I am documenting ORCA as it develops, including board concepts, design decisions, prototypes and test results.
+<sub>ORCA design files are made public for project review and funding requirements. Individual repositories state their applicable licensing terms; Orca One is proprietary and all rights are reserved.</sub>
