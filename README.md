@@ -7,25 +7,41 @@
 I design PCBs, embedded systems, and modular server hardware in Norfolk, UK.
 
 [![Orca One](https://img.shields.io/badge/FLAGSHIP-Orca_One_V1.0-111111?style=for-the-badge)](https://github.com/Finn254254/orca-one)
+[![PCIe NVMe Link](https://img.shields.io/badge/STORAGE-PCIe_NVMe_Link-005f73?style=for-the-badge)](https://github.com/Finn254254/ORCA-PCIe-NVMe-Link-)
 [![ORCA OS](https://img.shields.io/badge/SOFTWARE-ORCA_OS-1f6feb?style=for-the-badge)](https://github.com/Finn254254/orca-os)
-[![Portfolio](https://img.shields.io/badge/PORTFOLIO-finn254254.github.io-6e40c9?style=for-the-badge)](https://finn254254.github.io)
 
 </div>
+
+## Featured ORCA PCB hardware
+
+<table>
+  <tr>
+    <td width="50%" align="center">
+      <a href="https://github.com/Finn254254/orca-one">
+        <img src="https://raw.githubusercontent.com/Finn254254/orca-one/main/images/orca-one-front.png" alt="Orca One V1.0 front render">
+      </a>
+    </td>
+    <td width="50%" align="center">
+      <a href="https://github.com/Finn254254/ORCA-PCIe-NVMe-Link-">
+        <img src="https://raw.githubusercontent.com/Finn254254/ORCA-PCIe-NVMe-Link-/main/images/pcb-render-front.png" alt="ORCA PCIe NVMe Link V3.0 front render">
+      </a>
+    </td>
+  </tr>
+  <tr>
+    <td align="center">
+      <strong><a href="https://github.com/Finn254254/orca-one">Orca One V1.0</a></strong><br>
+      Custom Allwinner V3s Linux SBC
+    </td>
+    <td align="center">
+      <strong><a href="https://github.com/Finn254254/ORCA-PCIe-NVMe-Link-">ORCA PCIe NVMe Link V3.0</a></strong><br>
+      Custom PCIe x4 to M.2 NVMe expansion board
+    </td>
+  </tr>
+</table>
 
 ## Orca One V1.0
 
 Orca One is my custom Linux single-board computer built around the **Allwinner V3s**. I designed the schematic, four-layer PCB, power system, external interfaces, and manufacturing package from scratch as the first complete board in the ORCA hardware platform.
-
-<table>
-  <tr>
-    <td width="50%" align="center"><img src="https://raw.githubusercontent.com/Finn254254/orca-one/main/images/orca-one-front.png" alt="Orca One front render"></td>
-    <td width="50%" align="center"><img src="https://raw.githubusercontent.com/Finn254254/orca-one/main/images/orca-one-back.png" alt="Orca One back render"></td>
-  </tr>
-  <tr>
-    <td align="center"><strong>Front</strong></td>
-    <td align="center"><strong>Back</strong></td>
-  </tr>
-</table>
 
 | | |
 | --- | --- |
@@ -36,6 +52,19 @@ Orca One is my custom Linux single-board computer built around the **Allwinner V
 | **Current stage** | Design complete; preparing for fabrication and bring-up |
 
 **[Explore the complete Orca One project →](https://github.com/Finn254254/orca-one)**
+
+## ORCA PCIe NVMe Link V3.0
+
+The PCIe NVMe Link is a compact storage-expansion board that connects an M.2 NVMe drive through a custom PCIe x4 edge interface. It is an early ORCA storage module and a practical test platform for PCIe routing, M.2 connectivity, and modular expansion.
+
+| | |
+| --- | --- |
+| **Host interface** | PCIe x4 PCB edge connector |
+| **Storage** | M.2 M-key NVMe socket |
+| **Design** | Custom schematic and PCB layout |
+| **Current stage** | Design and 3D review complete; preparing for prototyping |
+
+**[Explore the ORCA PCIe NVMe Link project →](https://github.com/Finn254254/ORCA-PCIe-NVMe-Link-)**
 
 ## The ORCA platform
 
